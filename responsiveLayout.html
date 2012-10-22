@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Media Query Demos</title>
+<style type="text/css">
+.wrapper {
+	border: solid 2px #666666;	
+	padding: 5px 10px;
+	margin: 40px;
+}
+
+
+
+/* max-width */
+@media screen and (max-width: 600px) {
+	.one {
+		background: #FF99CC;
+	}
+	
+}
+
+/* min-width */
+@media screen and (min-width: 900px) {
+	.two {
+		background: #FF9900;
+	}
+	
+}
+
+/* min-width & max-width */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+	.three {
+		background: #99CCFF;
+	}
+	
+}
+
+}
+</style>
+</head>
+
+<body>
+	<div class="wrapper one">This box will turn to pink if the viewing area is less than 600px</div>
+	<div class="wrapper two">This box will turn to orange if the viewing area is greater than 900px</div>
+	<div class="wrapper three">This box will turn to blue if the viewing area is between 600px and 900px</div>
+</body>
+</html>
